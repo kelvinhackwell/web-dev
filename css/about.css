@@ -1,0 +1,224 @@
+/* ── MISSION ── */
+.mission-section {
+  padding: 7rem 2rem;
+  background: var(--cream);
+}
+.mission-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+.mission-text h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  color: var(--dark);
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+.mission-text p {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: var(--brown);
+  opacity: 0.9;
+  margin-bottom: 1.2rem;
+}
+.mission-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 12px 12px 0 var(--beige);
+}
+
+/* ── STATS ── */
+.stats-section {
+  background: var(--dark);
+  padding: 5rem 2rem;
+}
+.stats-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+.stat-item h3 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+.stat-item p {
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ── VALUES ── */
+.values-section {
+  padding: 7rem 2rem;
+  background: var(--beige);
+}
+.values-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.values-container h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  color: var(--dark);
+  margin-bottom: 3.5rem;
+}
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.value-card {
+  background: var(--cream);
+  padding: 2rem 1.5rem;
+  border-radius: 2px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s;
+}
+.value-card:hover {
+  transform: translateY(-6px);
+}
+.value-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.value-card h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  color: var(--dark);
+  margin-bottom: 0.7rem;
+}
+.value-card p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--brown);
+  opacity: 0.85;
+}
+
+/* ── TEAM ── */
+.team-section {
+  padding: 7rem 2rem;
+  background: var(--cream);
+}
+.team-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.team-container h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  color: var(--dark);
+  margin-bottom: 3.5rem;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+.team-card {
+  background: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s;
+}
+.team-card:hover {
+  transform: translateY(-6px);
+}
+.team-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: top;
+}
+.team-card-body {
+  padding: 1.5rem;
+}
+.team-card-body h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.15rem;
+  color: var(--dark);
+  margin-bottom: 0.3rem;
+}
+.team-role {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.8rem;
+}
+.team-card-body p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--brown);
+  opacity: 0.85;
+}
+
+/* ── ABOUT CTA ── */
+.about-cta {
+  background: var(--dark);
+  padding: 7rem 2rem;
+  text-align: center;
+}
+.about-cta-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.about-cta h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  color: var(--cream);
+  margin-bottom: 1.2rem;
+}
+.about-cta p {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.9;
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .mission-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .mission-image {
+    order: -1;
+  }
+  .mission-image img {
+    height: 350px;
+  }
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
